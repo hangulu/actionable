@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your Protests
+{% endblock %}
+
+{% block main %}
+    <div class="section" data-background-color="#16a085">
+        <h1 class="headline protesterhead2">
+            We found the following protests for you! Follow the link in the titles to get more information about the events.
+        </h1>
+    </div>
+    <div class="event-list">
+    {% for x in range(0, num) %}
+    	<h2>
+    		<a href="{{ 'http://www.facebook.com/events/{}'.format(ids[x]) }}">{{ names[x] }}</a>
+    	</h2>
+    	{% if cities[x] != 0 %}
+	    	<h3>
+	    		In {{ cities[x] }}.
+	    	</h3>
+	    {% endif %}
+    	<h3>
+    		Description:
+    		<br>
+    		{{ descriptions[x] }}
+    		<br>
+    	</h3>
+    {% endfor %}
+    </div>
+    <div class="resource-reminder">
+    	<h1>
+    		<br>
+    		If you'd like to find another list of protests, click <a href="/protests">here!</a>
+    	</h1>
+    	<h1>
+    		<br>
+    		And in case you missed it, <a href="/resources">here's</a> another link to our resources page!
+    	</h1>
+    </div>
+    <footer class="footer">
+    	<br>
+        <br>
+        <br>
+        <p>Created by: Hakeem Angulu</p>
+        <p>Contact information: <a href="mailto:hangulu@college.harvard.edu">
+        hangulu@college.harvard.edu</a>.</p>
+    </footer>
+{% endblock %}

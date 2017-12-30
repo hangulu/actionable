@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <!-- documentation at http://getbootstrap.com/docs/4.0/, alternative themes at https://bootswatch.com/4-alpha/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- My stylesheet -->
+        <link href="/static/styles.css" rel="stylesheet"/>
+       
+       <!-- JQuery, AJAX, Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+        <!-- Favicon and title-->
+        <link rel="shortcut icon" href="http://www.iconj.com/ico/m/r/mrgis4fasr.ico" type="image/x-icon" />
+        <title>actionable: {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body class="body">
+
+        <!-- Navigation -->
+
+        <nav class="navbar navbar-expand-md navbar-light border">
+            <a class="navbar-brand" href="/"><img src="https://image.ibb.co/cebvhw/actionable_logo2.png" width="40" height="40" class="d-inline-block align-top" alt="actionable"> actionable</a>
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto mt-2">
+                    <li class="nav-item"><a class="nav-item nav-link" href="/protests">Protests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/resources">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/news">News</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container p-5">
+            {% block main %}{% endblock %}
+        </main>
+    
+    </body>
+
+</html>

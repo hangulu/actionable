@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Protests!
+{% endblock %}
+
+{% block main %}
+    <div class="section" data-background-color="#16a085">
+        <h1 class="headline protesterhead">
+            You have something to fight for, so let's find you that fight.
+        </h1>
+    </div>
+    <div>
+    	<h1>
+    		Fill out this short form, and we'll find some protests that we think may interest you!
+    	</h1>
+    </div>
+    <div>
+    	<br>
+    </div>
+    <!-- Form for user submission of protest issue, zipcode, and timeframe -->
+    <div class="form">
+    	<form action="/protests" method="post">
+    		<div class="row">
+				<div class="form-group col-xs-5 col-lg-1">
+					<label class="col-form-label" for="protest_topic">Protest Issue</label>
+				    <select class="form-control" id="protest_topic" placeholder="Protest Issue" name="issue">
+				    	<option value="black">Black/PoC Liberation</option>
+						<option value="women">Women's Rights</option>
+						<option value="queer">LGBTQIA+ Rights</option>
+						<option value="immigrant">Immigrants' Rights and Reforms</option>
+						<option value="drug">Drug Policy Reform</option>
+						<option value="health">Health Policy/Reform</option>
+				    </select>
+					<small id="topicHelp" class="form-text">What would you like to fight for/against?</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-xs-5 col-lg-1">
+					<label class="col-form-label" for="zip_code" class="col-sm-2 col-form-label">Zip Code</label>
+					<input type="text" class="form-control" id="zip_code" placeholder="Zip Code" name="zipcode">
+					<small id="zipHelp" class="form-text">We'll find something relatively near to you!</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-xs-5 col-lg-1">
+				    <label class="col-form-label" for="timeframe">Timeframe</label>
+				    <select class="form-control" id="timeframe" name="timeframe">
+						<option value="1">Within 1 week</option>
+						<option value="2">Within 2 weeks</option>
+						<option value="3">Within 3 weeks</option>
+						<option value="4">Within 4 weeks</option>
+				    </select>
+				    <small id="timeHelp" class="form-text">And within your inputted timeframe!</small>
+			  	</div>
+			</div>
+			<div class="button_holder">
+				<button type="submit" class="btn btn-primary sub_protest">Find Me Some Protests</button>
+			</div>
+		</form>
+    </div>
+    <footer class="footer">
+    	<br>
+        <br>
+        <br>
+        <p>Created by: Hakeem Angulu</p>
+        <p>Contact information: <a href="mailto:hangulu@college.harvard.edu">
+        hangulu@college.harvard.edu</a>.</p>
+    </footer>
+{% endblock %}

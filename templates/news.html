@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    News
+{% endblock %}
+
+{% block main %}
+    <div class="section" data-background-color="#16a085">
+        <h1 class="headline">
+            A huge part of activism is staying informed. Here are today's news stories, for the US.
+        </h1>
+    </div>
+    <div>
+    	<br>
+    	<br>
+    </div>
+    <!-- https://feedgrabbr.com/ -->
+    <div class="news-container">
+	    <div class="feedgrabbr_widget" id="fgid_94eea4068a03267002f1d9a0c">
+	    </div>
+		<script>
+			if (typeof (fg_widgets) === "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_94eea4068a03267002f1d9a0c");
+		</script>
+		<script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
+		<div class="news">
+			<p>
+				Also, here are some links to popular news sites:
+			</p>
+			<ul style="list-style: none">
+				<li><a class="btn btn-primary" href="https://news.google.com/news/" role="button">Google News</a></li>
+				<li><a class="btn btn-primary" href="https://www.nytimes.com/" role="button">The New York Times</a></li>
+				<li><a class="btn btn-primary" href="https://www.apnews.com/" role="button">The Associated Press</a></li>
+				<li><a class="btn btn-primary" href="https://www.theguardian.com/us" role="button">The Guardian</a></li>
+				<li><a class="btn btn-primary" href="http://www.cnn.com/" role="button">CNN</a></li>
+			</ul>
+		</div>
+	</div>
+	<footer class="footer">
+		<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Created by: Hakeem Angulu</p>
+        <p>Contact information: <a href="mailto:hangulu@college.harvard.edu">
+        hangulu@college.harvard.edu</a>.</p>
+    </footer>
+{% endblock %}

@@ -1,0 +1,321 @@
+/* Import the Google fonts */
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+/* Import Google Feeds CSS */
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+/* Set general styling */
+html
+{
+    font-size: 2vw;
+}
+@media screen and (min-width: 75em) {
+  html {
+    font-size: 1.5em;
+  }
+}
+
+/* Style for the branding */
+.navbar-brand
+{
+    font-size: xx-large;
+    font-family: 'ABeeZee';
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+}
+
+/* The collapsed navbar */
+.navbar-collapse
+{
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+/* The navbar toggler for when it is condensed */
+.navbar-toggler {
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+    border: 0;
+}
+
+/* Controls the hover behavior for the links in the navbar */
+/* https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
+ul.navbar-nav a:hover
+{
+    color: #000000 !important;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    background: transparent;
+    border:none;
+}
+
+/* Style for the navbar */
+ul.navbar-nav
+{
+    width: 75%;
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    background-color: transparent;
+    font-family: 'ABeeZee';
+}
+
+/* Style for each element of the navbar */
+.navbar-nav li
+{
+    display: inline-block;
+    float: none;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for each link in the navbar */
+.navbar-nav a
+{
+    text-align: center;
+    float: none;
+    padding: 0.75rem 0 0.8rem 0;
+    margin: 0;
+    border: 0;
+    display: block;
+}
+
+/* Remove border from the navbar */
+ul.navbar-nav li:first-child a
+{
+    border: none;
+}
+ul.navbar-nav li:last-child a
+{
+    border: none;
+}​
+
+/* General style for the navbar */
+.navbar
+{
+    border: 0;
+    box-shadow: none;
+    padding-top: 2.5rem;
+    padding-left: 6rem;
+}
+
+/* Remove border from the navbar */
+.border
+{
+     border: none !important;
+}
+
+/* Body style */
+body
+{
+     background-color: rgb(252, 119, 83);
+     transition: 0.3s all;
+}
+
+.changeColor {
+   background-color: #e74c3c;
+}
+
+/* Headline text */
+.headline
+{
+    font-family: 'ABeeZee';
+    font-weight: 400;
+    color: white;
+    line-height: 1.1;
+    max-width: 50em;
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+}
+.hpart2
+{
+    color: black;
+}
+.hpart3
+{
+    color: white;
+    font-size: 2rem;
+}
+
+/*Footer text */
+.footer
+{
+    font-size: .25rem;
+    text-align: left;
+    line-height: 0.5;
+}
+.footer a
+{
+    color: black !important;
+}
+
+/* For the protest listing page */
+.protesterhead
+{
+    color: white;
+    font-size: 4rem;
+}
+.protesterhead2
+{
+    color: black;
+    font-size: 2rem;
+}
+.resource-reminder h1
+{
+    color: white;
+    font-size: 1.5rem;
+}
+.event-list h2
+{
+    font-size: 1.25rem;
+}
+.event-list h3
+{
+    font-size: 0.75rem;
+}
+.event-list a
+{
+     color: white !important;
+}
+
+/* Style for the body container */
+.row
+{
+     display: flow-root;
+}
+
+/* Change background color as you scroll */
+.wrapper
+{
+  transition: background .2s ease;
+}
+
+/* Styling for the section div */
+.section
+{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title
+{
+  white-space: nowrap;
+  font-weight: 100;
+  font-size: 4vw;
+}
+.protest1
+{
+    font-family: 'Abel';
+    font-weight: 200;
+    color: white;
+    line-height: 1.1;
+    max-width: 50em;
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+/* Styling for the form */
+.form-group
+{
+     font-family: 'Abel';
+     color: white;
+     font-size: 1rem;
+}
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.col-lg-1
+{
+     max-width: 100% !important;
+}
+.button_holder
+{
+     text-align: center;
+}
+
+/* Styling for accordion. */
+.protest-tips
+{
+    margin: 1.25rem;
+}
+.panel-title
+{
+    font-size: 1.5rem;
+    font-family: 'ABeeZee';
+    color: black !important;
+}
+.panel-title a
+{
+    color: black !important;
+}
+.acc-header
+{
+     font-family: 'ABeeZee';
+     color: white;
+}
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+/* RSS Feed styling */
+.feedgrabbr_widget
+{
+    float: left;
+    width: 100%;
+}
+.news
+{
+     color: white;
+}
+.news-container
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden; /*To get your parent to respect the floated divs*/
+}
+.feedgrabbr_widget, .news
+{
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}

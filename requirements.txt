@@ -1,0 +1,8 @@
+urllib3
+facebook
+requests
+pandas
+datetime
+Flask
+Flask_Session
+sqlite3
