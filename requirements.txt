@@ -5,5 +5,4 @@ pandas
 datetime
 Flask
 Flask_Session
-sqlite3
 gunicorn
