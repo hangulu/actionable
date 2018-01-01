@@ -89,3 +89,6 @@ def protests():
 		return render_template('list.html', ids=event_ids, names=event_names, descriptions=event_descriptions, cities=event_cities, num=num_events)
 	else:
 		return render_template('protests.html')
+
+if __name__ == '__main__':
+	app.run(debug=True, use_reloader=True)
